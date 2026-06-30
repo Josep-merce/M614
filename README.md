@@ -30,4 +30,4 @@ Text normal amb **negreta** i *cursiva*.
 
 Una branca per cada aea
 
-M614/evidencies/aea0/CAPTURA AWS.png
+![Captura AWS](evidencies/aea0/CAPTURA%20AWS.png)
