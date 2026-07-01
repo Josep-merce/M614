@@ -2,32 +2,25 @@
 
 Repositori de la feina del mòdul M0614.
 
-- **Autor:** Josep Dominguez
+- **Autor:** Josep Domínguez
 - **Curs:** DAW · Institut La Mercè
 
-**Entorn de Treball**
+## Accés a AWS
 
-El sistema operatiu i l'editor que fas servir (Ubuntu + VS Code).
-La versió de Git instal·lada (la sortida de git --version).
-Una llista, amb les teves paraules, dels passos que has seguit per crear i pujar el repositori.
+- **AWS Academy:** programa educatiu d'Amazon que dona accés a
+  serveis reals d'AWS mitjançant crèdits, sense targeta de crèdit.
+- **Iniciar el laboratori:** a Canvas → Learner Lab → *Start Lab*,
+  espero que l'indicador es posi verd.
+- **Obrir la consola:** faig clic a *AWS* i s'obre la consola ja
+  autenticada. Regió de treball: us-east-1 (N. Virginia).
 
-# Títol de nivell 1
-## Títol de nivell 2
-
-Text normal amb **negreta** i *cursiva*.
-
-- Element de llista
-- Un altre element
-
-1. Llista numerada
-2. Segon pas
-
-`codi en línia`  i enllaços: [text](https://exemple.com)
-
-## Accés AWS
+![Captura de la consola AWS](evidencies/aea0/captura-aws.png)
 
 ## Estructura del repositori
 
-Una branca per cada aea
+La feina s'organitza amb una branca per AEA:
 
-![Captura AWS](evidencies/aea0/CAPTURA%20AWS.png)
+- `aea0` — preparació de l'entorn (Git/GitHub, Docker, AWS)
+- `aea1`, `aea2`, ... — la resta d'unitats
+
+Cada branca conté les evidències de la seva AEA a `evidencies/aeaX/`.
