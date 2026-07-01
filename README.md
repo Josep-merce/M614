@@ -14,7 +14,7 @@ Repositori de la feina del mòdul M0614.
 - **Obrir la consola:** faig clic a *AWS* i s'obre la consola ja
   autenticada. Regió de treball: us-east-1 (N. Virginia).
 
-![Captura de la consola AWS](evidencies/aea0/captura-aws.png)
+![Captura de la consola AWS](evidencies/aea0/CAPTURA AWS.png)
 
 ## Estructura del repositori
 
