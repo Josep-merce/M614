@@ -29,8 +29,8 @@ Estructura de la branca:
 - Pàgina visible al navegador a http://localhost
 
 ### Captures
-![Pàgina a localhost](evidencies/a1/pagina-localhost.png)
-![Estat del servei Apache](evidencies/a1/apache-status.png)
+![Pàgina a localhost](evidencies/aea1/a1/pagina-localhost.png)
+![Estat del servei Apache](evidencies/aea1/a1/apache-status.png)
 
 ---
 
@@ -50,8 +50,8 @@ He fet servir `httpd` (o `nginx`) perquè... [justificació breu]
 - Pàgina visible al navegador a http://localhost:8080
 
 ### Captures
-![Contenidor en execució](evidencies/a2/docker-ps.png)
-![Pàgina al port 8080](evidencies/a2/pagina-8080.png)
+![Contenidor en execució](evidencies/aea1/a2/docker-ps.png)
+![Pàgina al port 8080](evidencies/aea1/a2/pagina-8080.png)
 
 ---
 
@@ -78,4 +78,4 @@ He fet servir `httpd` (o `nginx`) perquè... [justificació breu]
 
 ### Captures
 ![Web des d'S3](evidencies/a3/s3-web.png)
-![EC2 en Running](evidencies/a3/ec2-running.png)
+![EC2 en Running](evidencies/aea1/a3/ec2-running.png)
