@@ -33,7 +33,7 @@
 - **Contenidor:** instància en execució creada a partir d'una imatge
 ### Verificació
 - `docker images` mostra les imatges `hello-world` i `alpine`
-![Captura images Docker](evidencies/a2/docker-hello-world.png)
+![Captura images Docker](evidencies/aea0/a2/docker-hello-world.png)
 
 ## A3 · AWS Academy
 ### Accés a la consola
@@ -46,4 +46,4 @@ La feina s'organitza amb una branca per AEA:
 - `aea0` — preparació de l'entorn (Git/GitHub, Docker, AWS)
 - `aea1`, `aea2`, ... — la resta d'unitats
 ### Captura
-![Captura de la consola AWS](evidencies/a3/aws-lab-actiu.png)
+![Captura de la consola AWS](evidencies/aea0/a3/aws-lab-actiu.png)
