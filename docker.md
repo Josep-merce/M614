@@ -1,41 +1,36 @@
-Dokcer i el seu resultat.
+# Docker — AEA0·A2
 
-isard@debian:~$ docker run hello-world
+## Instal·lació
 
-Hello from Docker!
-This message shows that your installation appears to be working correctly.
+Passos que he seguit per instal·lar Docker sobre Ubuntu:
+1. He afegit la clau i el repositori oficials de Docker.
+2. He instal·lat `docker-ce` i el plugin `docker-compose-plugin`.
+3. He afegit el meu usuari al grup `docker` per executar-lo sense `sudo`.
 
-To generate this message, Docker took the following steps:
- 1. The Docker client contacted the Docker daemon.
- 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
-    (amd64)
- 3. The Docker daemon created a new container from that image which runs the
-    executable that produces the output you are currently reading.
- 4. The Docker daemon streamed that output to the Docker client, which sent it
-    to your terminal.
+Versions instal·lades:
+- `docker --version` → Docker version 27.x.x
+- `docker compose version` → Docker Compose version v2.x.x
 
-To try something more ambitious, you can run an Ubuntu container with:
- $ docker run -it ubuntu bash
+## Prova hello-world
 
-Share images, automate workflows, and more with a free Docker ID:
- https://hub.docker.com/
+$ docker run hello-world
+Hello from Docker! ...
 
-For more examples and ideas, visit:
- https://docs.docker.com/get-started/
+## Prova amb Alpine
 
+$ docker run alpine echo "El meu primer contenidor Alpine"
+El meu primer contenidor Alpine
 
-isard@debian:~$ docker run alpine echo "el meu contenidor Alpine"
-Unable to find image 'alpine:latest' locally
-latest: Pulling from library/alpine
-55afa1ecc21d: Pull complete 
-f5124fb579e2: Download complete 
-56dceff11b33: Download complete 
-Digest: sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
-Status: Downloaded newer image for alpine:latest
-el meu contenidor Alpine
-isard@debian:~$ 
+## Imatge vs. contenidor
 
-Imatge la recepta
-Contendor el plat
+| Concepte   | Què és                                             |
+|------------|----------------------------------------------------|
+| Imatge     | Plantilla de només lectura amb l'aplicació.        |
+| Contenidor | Instància en execució creada a partir d'una imatge.|
 
-dockcer images ens mostra les iamtges que tenim
+## Imatges descarregades
+
+$ docker images
+REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
+hello-world   latest    ...            ...            ...
+alpine        latest    ...            ...            ...
