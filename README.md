@@ -43,7 +43,7 @@
 ### Verificació
 - `docker images` mostra les imatges `hello-world` i `alpine`
 
-![Captura de la consola AWS](evidencies/aea0/docker-images.png)
+![Captura images Docker](evidencies/aea0/docker-images.png)
 
 
 ## A3 · AWS Academy
