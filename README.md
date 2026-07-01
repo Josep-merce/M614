@@ -1,7 +1,15 @@
+
 # AEA1 — Servidors web
 
 **Alumne:** Nom i cognoms
 **Branca:** aea1
+
+Estructura de la branca:
+
+- `arxius/aX/` — codi de cada activitat
+- `evidencies/aX/` — captures de pantalla de cada activitat
+
+---
 
 ## A1 · Servidor Apache (localhost)
 
@@ -21,8 +29,10 @@
 - Pàgina visible al navegador a http://localhost
 
 ### Captures
-![Estat del servei Apache](evidencies/aea1/apache-status.png)
-![Pàgina a localhost](evidencies/aea1/pagina-localhost.png)
+![Pàgina a localhost](evidencies/a1/pagina-localhost.png)
+![Estat del servei Apache](evidencies/a1/apache-status.png)
+
+---
 
 ## A2 · Servidor web en contenidor Docker
 
@@ -40,5 +50,32 @@ He fet servir `httpd` (o `nginx`) perquè... [justificació breu]
 - Pàgina visible al navegador a http://localhost:8080
 
 ### Captures
-![Contenidor en execució](evidencies/aea1/docker-ps.png)
-![Pàgina al port 8080](evidencies/aea1/pagina-8080.png)
+![Contenidor en execució](evidencies/a2/docker-ps.png)
+![Pàgina al port 8080](evidencies/a2/pagina-8080.png)
+
+---
+
+## A3 · Desplegament al núvol (S3 i EC2)
+
+### Decisions preses
+- S3 per a la web estàtica (servei gestionat, sense administrar servidor).
+- EC2 + Apache per tenir un servidor propi i configurable.
+
+### Passos realitzats
+1. Bucket S3 a us-east-1 amb hosting web activat.
+2. Bucket policy pública amb `s3:GetObject`.
+3. Instància EC2 (Amazon Linux 2023) amb Apache i ports 22 i 80 oberts.
+
+### URL públiques
+- S3: http://EL-TEU-BUCKET.s3-website-us-east-1.amazonaws.com
+- EC2: http://<IP-PUBLICA>
+
+### Comparativa S3 vs EC2
+| | S3 | EC2 |
+|---|---|---|
+| Administres el servidor? | No | Sí |
+| Cost/manteniment | Baix | Més alt |
+
+### Captures
+![Web des d'S3](evidencies/a3/s3-web.png)
+![EC2 en Running](evidencies/a3/ec2-running.png)
