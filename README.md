@@ -1,8 +1,23 @@
-# M0614 — Desplegament d'Aplicacions Web
+# AEA1 · A1 — Servidor web Apache (localhost)
 
-Repositori de la feina del mòdul M0614.
+**Alumne:** Nom i cognoms
+**Branca:** aea1
 
-- **Autor:** El teu Nom
-- **Curs:** DAW · Institut La Mercè
+## Passos realitzats
+1. Actualització de paquets: `sudo apt update`
+2. Instal·lació: `sudo apt install apache2 -y`
+3. Comprovació del servei: `sudo systemctl status apache2`
+4. Publicació de la meva pàgina a `/var/www/html/index.html`
 
-La feina s'organitza amb una branca per cada AEA (`aea0`, `aea1`, ...).
+## Fitxers de configuració d'Apache identificats
+- `/etc/apache2/apache2.conf` — configuració principal
+- `/etc/apache2/ports.conf` — ports d'escolta
+- `/var/www/html/` — arrel del document
+
+## Verificació
+- `curl -I http://localhost` retorna `200 OK`
+- Pàgina visible al navegador a http://localhost
+
+## Captures
+![Estat del servei Apache](evidencies/aea1/apache-status.png)
+![Pàgina a localhost](evidencies/aea1/pagina-localhost.png)
