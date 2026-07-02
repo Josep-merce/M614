@@ -54,20 +54,19 @@ He fet servir `httpd` (o `nginx`) perquè... [justificació breu]
 ![Pàgina al port 8080](evidencies/aea1/a2/pagina-8080.png)
 
 ---
-
 ## A3 · Desplegament al núvol (S3 i EC2)
 
 ### Decisions preses
 - S3 per a la web estàtica (servei gestionat, sense administrar servidor).
-- EC2 + Apache per tenir un servidor propi i configurable.
+- EC2 + Apache per tenir un servidor propi; configurat amb User Data i sense SSH.
 
 ### Passos realitzats
-1. Bucket S3 a us-east-1 amb hosting web activat.
+1. Bucket S3 `aea1-web-cognom-2026` a us-east-1 amb hosting web activat.
 2. Bucket policy pública amb `s3:GetObject`.
-3. Instància EC2 (Amazon Linux 2023) amb Apache i ports 22 i 80 oberts.
+3. Instància EC2 (Amazon Linux 2023) amb Apache instal·lat via User Data i el port 80 obert.
 
 ### URL públiques
-- S3: http://EL-TEU-BUCKET.s3-website-us-east-1.amazonaws.com
+- S3: http://aea1-web-cognom-2026.s3-website-us-east-1.amazonaws.com
 - EC2: http://<IP-PUBLICA>
 
 ### Comparativa S3 vs EC2
@@ -77,5 +76,5 @@ He fet servir `httpd` (o `nginx`) perquè... [justificació breu]
 | Cost/manteniment | Baix | Més alt |
 
 ### Captures
-![Web des d'S3](evidencies/a3/s3-web.png)
-![EC2 en Running](evidencies/aea1/a3/ec2-running.png)
+![Web des d'S3](evidencies/aea1/a3/s3-web.png)
+![Web des d'EC2](evidencies/aea1/a3/ec2-web.png)
